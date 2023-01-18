@@ -1,6 +1,6 @@
 import { Box, Button } from "@mui/material";
 import { BSBButton } from "../types/BSBButton";
-import { bsbContainer } from "../styles/inline";
+import { bsbSx } from "../styles/inline";
 
 export const BigShinyButton = ({ button }: BSBButton) => {
   const axios = require("axios").default;
@@ -16,8 +16,11 @@ export const BigShinyButton = ({ button }: BSBButton) => {
   };
 
   return (
-    <Box sx={bsbContainer}>
-      <Button onClick={() => onButtonClick(button)}>{`${button}`}</Button>
+    <Box sx={bsbSx.container}>
+      <Button
+        sx={bsbSx.button}
+        onClick={() => onButtonClick(button)}
+      >{`${button}`}</Button>
     </Box>
   );
 };

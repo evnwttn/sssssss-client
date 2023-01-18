@@ -1,5 +1,10 @@
-export const bsbContainer = {
-  mx: "15vw",
+export const bsbSx = {
+  container: {
+    mx: "15vw",
+  },
+  button: {
+    fontSize: "5vw",
+  },
 };
 
 export const appContainer = {
