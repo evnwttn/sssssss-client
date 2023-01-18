@@ -1,3 +1,9 @@
+import { Box, Button } from "@mui/material";
+
 export const BigShinyButton = () => {
-  return <Button></Button>;
+  return (
+    <Box sx={{ mx: "15vw" }}>
+      <Button>Button</Button>
+    </Box>
+  );
 };
