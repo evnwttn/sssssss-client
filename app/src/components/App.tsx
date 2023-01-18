@@ -5,8 +5,8 @@ import { appContainer } from "../styles/inline";
 export const App = () => {
   return (
     <Box sx={appContainer}>
-      <BigShinyButton />
-      <BigShinyButton />
+      <BigShinyButton button="[++]" />
+      <BigShinyButton button="[--]" />
     </Box>
   );
 };
