@@ -6,7 +6,7 @@ import { bsbSx } from "../styles/inline";
 export const BigShinyButton = ({ button }: BSBButton) => {
   const onButtonClick = (button: string) => {
     axios
-      .put("http://localhost:8000/", button)
+      .put("http://localhost:8000/", { button: button })
       .then(function (response: any) {
         console.log(response);
       })
